@@ -68,12 +68,12 @@ body{
 	margin:15px 10px;
 }
 #gWrapper:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
 * html #gWrapper {zoom: 1;}
 *:first-child+html #gWrapper {zoom: 1;}
@@ -167,14 +167,19 @@ body{
 #output .optionLink a{
 	color: #004099 !important;	
 }
+
+.hasISBNTable,
 #disTable{
 	margin: 5px 0 0 0;
 	width: 100%;
 }
+.hasISBNTable td b,
 #disTable td b{
 	color: #990000;
 	font-weight: bold;
 }
+.hasISBNTable th,
+.hasISBNTable td,
 #disTable th,
 #disTable td{
 	padding: 3px 10px ;
@@ -182,23 +187,39 @@ body{
 	font-size: 12px !important;
 	border-bottom: 1px dotted #ccc;
 }
+.hasISBNTable th:last-child,
+.hasISBNTable td:last-child,
 #disTable th:last-child,
-#disTable td:last-child{
+#disTable td:last-child,
+.hasISBNTable td.bgNone{
 	border-bottom: none;
 }
+.hasISBNTable th.tHead,
 #disTable th.tHead{
 	padding: 5px 10px ;
 	background-color: #f8f8f8;
 	font-weight: bold;	
 }
+.hasISBNTable th.tHead a,
 #disTable th.tHead a{
 	color: #004099 !important;
 	margin-left: 10px;
 	font-weight: bold;		
 }
+.hasISBNTable th.tHead .ex,
+#disTable th.tHead .ex{
+	font-weight: normal;
+	font-size: 10px;
+	color: #999;
+	margin-left: 10px;
+}
+.hasISBNTable th,
 #disTable th{
 	font-weight: normal !important;
 }
+
+
+
 
 #reserveURL{
 	font-size: 12px !important;
@@ -240,3 +261,31 @@ body{
 .aC{
 	text-align: center;
 }
+
+/**
+ * popup
+ */
+ body#popup{
+ 	width: 200px;
+ }
+ body#popup .inner{
+ 	margin: 10px;
+ }
+ body#popup h1{
+ 	font-size: 12px;
+ 	/*background-color: #f5f5f5;*/
+ 	padding: 0px 5px 5px;
+ 	line-height: 1;
+ 	border-bottom: 1px solid #ccc;
+ }
+ body#popup ul{
+ 	margin: 5px;
+ 	padding: 0;
+ 	list-style: none;
+ }
+ body#popup ul li{
+ 	margin: 0;
+ }
+ body#popup ul li a{
+ 	font-size: 12px;
+ }
